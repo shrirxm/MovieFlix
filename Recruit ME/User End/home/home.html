@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../home/home.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="resources/logo.png">
+<title>Home</title>
+<link rel="icon" type="image/x-icon" href="../resources/logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;background-color: #678983;}
+.myslides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshoww-container {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prevv, .nextt {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.nextt {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevv:hover, .nextt:hover {
+  color: rgba(235,68,0,0.8);
+}
+
+/* Caption text */
+.textt {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertextt {
+    color: rgba(235,68,0,0.8);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dott {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dott:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadee {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadee {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.nav-link{
+    color: #F0E9D2;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prevv, .nextt,.textt {font-size: 11px}
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm  ">
+        <div class="container-fluid">
+          <a class="navbar-brand"id="company" href="">
+            <img src="../resources/logo.png" alt="Avatar Logo" style="width:40px;" >
+                RECRUIT ME
+          </a>
+      
+          <div class="d-flex justify-content-center">
+          <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" href="home.html">HOME</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../jobs/jobs.html">JOBS</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../skillset/skillset.html">SKILLSET</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../map/map.html">JOB MAP</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="../stats/stats.html">STATS</a>
+           </li>
+           </div>
+           <a class="navbar-brand" href="../profile/profile.html">
+             <img src="../resources/user.png" alt="Avatar Logo" style="width:40px;" >
+           </a>
+         </ul>
+        </div>
+        </nav>
+        
+<br>
+<br>
+<br>
+<br>
+
+<div class="slideshoww-container">
+    <div class="myslides fadee">
+    <div class="numbertextt">1 / 3</div>
+    <img src="../home/1.png" style="width:100%">
+    <div class="textt"></div>
+    </div>
+
+    <div class="myslides fadee">
+    <div class="numbertextt">2 / 3</div>
+    <img src="../home/2.png" style="width:100%">
+    <div class="textt"></div>
+    </div>
+
+    <div class="myslides fadee">
+    <div class="numbertextt">3 / 3</div>
+    <a href="../profile/profile.html"><img src="../home/3.png" style="width:100%"></a>
+    <div class="text"></div>
+    </div>
+
+    <a class="prevv" onclick="plusSlides(-1)">❮</a>
+    <a class="nextt" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+    <div style="text-align:center">
+    <span class="dott" onclick="currentSlide(1)"></span> 
+    <span class="dott" onclick="currentSlide(2)"></span> 
+    <span class="dott" onclick="currentSlide(3)"></span> 
+    </div>
+
+<!-- features -->
+<div class="features">
+    <div class="slide">
+    <img src="../home/predictive-chart.png" alt="Prediction">
+    <p>We do prediction and analysis on Upcoming Jobs & Admissions</p>
+    </div>
+    <div class="slide">
+      <img src="../home/mechanism.png" alt="Prediction">
+      <p>We Provide Skillset and Future Tech</p>
+    </div>
+    <div class="slide">
+      <img src="../home/contract.png" alt="Prediction">
+      <p>Recruit Me forms a community with Users,Recruiters and Universities</p>
+    </div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("myslides");
+  let dots = document.getElementsByClassName("dott");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/6307696a54f06e12d890b61a/1gbaf7ich';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+</body>
+</html> 

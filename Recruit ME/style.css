@@ -1,0 +1,57 @@
+body{
+    background-color: #371B58;
+    
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .flex-item-left {
+    background-color: #7858A6;
+    padding: 10px;
+    flex: 50%;
+    margin-right: 10px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  
+  .flex-item-right {
+    margin-top: 20px;
+    background-color:#2C0F4E;
+    padding: 10px;
+    flex: 50%;
+    margin-left: 10px;
+    padding-bottom: 65px;
+    border-radius: 30px;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
+
+  #img{
+    padding-bottom: 15px;
+  }
+.topic{
+  margin-left: 20px;
+  color: antiquewhite;
+  font-family: Oswald;
+}
+  .flex-item-right a, .flex-item-left a{
+    text-decoration: none;
+    background-color: #230A40;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+  }

@@ -1,0 +1,80 @@
+/* navbar */
+.nav-link{
+    color:#F0E9D2;
+    font-size:18px;
+  }
+  .nav-link:hover{
+    color:#000000;
+  }
+  
+  body{
+      background-color:#678983;
+  }
+  #company{
+  font-family: 'Oswald', sans-serif;
+  color:#F0E9D2;
+  }
+  ul{
+  border-bottom:1px solid #F0E9D2;
+  }
+  li{
+  padding-right:10px;
+  }
+  
+  /* navbar ends */
+
+  /* content */
+  #display-image{
+    margin-top: 20px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #image-input{
+    justify-content: center;
+    align-items: center;
+    background-color: #284640;
+    color: #F0E9D2;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 25px; 
+  }
+
+  .container{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .left{
+    flex:50%;
+  }
+
+  .right{
+    flex:50%;
+    background-color: #284640;
+    border-radius: 20px;
+  }
+
+  .text{
+    margin-left: 30px;
+  }
+
+  .btn{
+    background-color: rgba(199, 179, 206, 0.738);
+  }
+
+  /* icons */
+
+  .icon{
+    margin-top: 30px;
+    font-size: 50px;
+  }
+
+ 
+
+  

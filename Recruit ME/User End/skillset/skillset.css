@@ -1,0 +1,82 @@
+/* navbar */
+.nav-link{
+    color:#F0E9D2;
+    font-size:18px;
+  }
+  .nav-link:hover{
+    color:#000000;
+  }
+  
+  body{
+      background-color:#678983;
+  }
+  #company{
+  font-family: 'Oswald', sans-serif;
+  color:#F0E9D2;
+  }
+  ul{
+  border-bottom:1px solid #F0E9D2;
+  }
+  li{
+  padding-right:10px;
+  }
+  
+  /* navbar ends */
+
+  /* content   */
+.container{
+    width: 100%;
+    background-color: #6C938C;
+    margin-top: 30px;
+    border-radius:20px;
+    padding: 20px;
+}
+
+.container img{
+    width: 130px;
+}
+
+.container-main{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  .left{
+    flex: 25%;
+    background-color: #6C938C;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .right{
+    flex: 75%;
+    background-color: #6C938C;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding: 30px;
+  }
+  
+  #display{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+
+  .right button{
+    justify-content: center;
+    align-items: center;
+    background-color: #284640;
+    color: #F0E9D2;
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 140px;
+    right: 390px;
+  }
+
+  #know a{
+    color: #F0E9D2;
+  }

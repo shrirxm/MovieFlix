@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cprofile.css">
+    <link rel="icon" type="image/x-icon" href="../resources/logo.png">
+</head>
+<body>
+    <form action="../profile/profile.html">
+    <div class="wrapper">
+        <div class="title">
+          Complete your profile
+        </div>
+        <div class="form">
+           <div class="inputfield">
+              <label>Degree</label>
+              <input type="text" class="input" name="deg">
+           </div>  
+            <div class="inputfield">
+              <label>Department</label>
+              <input type="text" class="input" name="dept">
+           </div>
+           <div class="inputfield">
+            <label>CGPA</label>
+            <input type="number" name="cgpa" class="input" min="0.0" max="10.0">
+         </div> 
+          <div class="inputfield">
+              <label>10th percentage</label>
+              <input type="number" name="x" class="input" min="0" max="100">
+           </div>
+           <div class="inputfield">
+            <label>12th percentage</label>
+            <input type="number" name="xii" class="input" min="0" max="100">
+         </div>
+         <div class="inputfield">
+            <label>Skills</label>
+            <input type="text" name="skill" class="input" multiple size="50">
+         </div>
+         <div class="inputfield">
+            <label>Interested Domain</label>
+            <input type="text" name="domain" class="input" multiple size="50">
+         </div>
+          <div class="inputfield">
+            <input type="button" value="Previous" class="btn" onclick="history.back()">
+          </div>
+        
+          <div class="inputfield">
+            <input type="submit" value="Submit" class="btn">
+          </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>

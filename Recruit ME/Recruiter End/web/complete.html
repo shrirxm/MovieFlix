@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+	  <link rel="stylesheet" href="complete.css" />
+  </head>
+  <body>
+    <h1>Recruit ME</h1>
+    <p>Complete Your Profile</p>
+    <form action='./profile.php'>
+      <fieldset>
+		<h1>Company Details</h1>
+        <label>Company Name: <input type="text" name="cname" required /></label>
+        <label>Company ID: <input type="text" name="cid" required /></label>
+        <label>Email: <input type="email" name="email" required /></label>
+		<label>Company Number: <input type="tel" name="cno" required /></label>
+        <label>Website: <input type="url" name="website" /></label>
+		<label>Company Address: <input type="text" name="cadd" required /></label>
+		<label>Company State: <input type="text" name="state" required /></label>
+		<label>Company Pincode: <input type="number" name="cpin" required /></label>
+
+      </fieldset>
+      <fieldset>
+		<h1>Company Overview </h1> 
+		<h2>Company Type</h2>
+        <label><input type="radio" name="company-type" class="inline" /> Public Company</label>
+        <label><input type="radio" name="company-type" class="inline" /> Private Company</label>
+		<label>Stream
+			<select name="stream">
+			  <option value="">(select one)</option>
+			  <option value="1">Technology</option>
+			  <option value="2">Engineering</option>
+			  <option value="3">Pharmacy</option>
+			  <option value="4">Management</option>
+			  <option value="5">Others</option>
+			</select>
+		  </label>
+		  <label>Field of Company: <input type="text" name="field" required /></label>
+      </fieldset>
+      <fieldset>
+		<h1>Other Details</h1>
+        <label>Upload a profile picture: <input type="file" name="file" /></label>
+		<label>Owner Name: <input type="text" name="oname" required /></label>
+		<label>Owner Number: <input type="tel" name="ono" required /></label>
+		<label>Owner Email : <input type="email" name="oemail" required /></label>
+		<label>Company Established Date: <input type="date" name="cdate" required /></label>
+        <label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="About your company"></textarea>
+			  </label>
+			  <label>
+				<input type="checkbox" name="terms" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+					</label>
+      </fieldset>
+      <input type="submit" value="Submit"  />
+    </form>
+  </body>
+</html>

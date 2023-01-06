@@ -1,0 +1,119 @@
+.navbar {
+  width: 100%;
+  overflow: auto;
+
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding-right: 12px;
+  padding-left: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+}
+
+/* Current/active navbar link */
+
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*home page*/
+
+
+
+
+
+
+
+.bg-blue {
+    background-color: #191970
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px
+}
+
+.navbar-brand {
+    padding: 14px 20px;
+    font-size: 16px
+}
+
+.navbar-nav {
+    width: 100%
+  }
+
+.nav-item {
+    padding: 6px 14px;
+    text-align: center
+}
+
+.nav-link {
+    padding-bottom: 10px
+}
+
+.v-line {
+    background-color: gray;
+    width: 1px;
+    height: 20px
+}
+
+.navbar-collapse.collapse.in {
+    display: block !important
+}
+
+@media (max-width: 576px) {
+    .nav-item {
+        width: 100%;
+        text-align: left
+    }
+
+    .v-line {
+        display: none
+    }
+}
+
+
+body {
+  /* override browser defaults */
+  margin: 0px;
+  padding: 0px;
+}
+
+.clearfix {
+  overflow: auto;
+  border: 1px solid red;
+  background-color: lightgray;
+}
+
+.center {
+  padding: 10px;
+  /* vertical centering of <h1> */
+  text-align: center;
+  /* horizontal centering of <h1> */
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 1px solid blue;
+  z-index: 1;
+  /* Make the logo and <h1> overlap */
+}

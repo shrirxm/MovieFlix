@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Job Map</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="map.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="../resources/logo.png">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm  ">
+  <div class="container-fluid">
+    <a class="navbar-brand"id="company" href="../profile/profile.html">
+      <img src="../resources/logo.png" alt="Avatar Logo" style="width:40px;" >
+          RECRUIT ME
+    </a>
+
+    <div class="d-flex justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../home/home.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../jobs/jobs.html">JOBS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../skillset/skillset.html">SKILLSET</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../map/map.html">JOB MAP</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../stats/stats.html">STATS</a>
+      </li>
+     </div>
+     <a class="navbar-brand" href="">
+       <img src="../resources/user.png" alt="Avatar Logo" style="width:40px;" >
+     </a>
+   </ul>
+  </div>
+  </nav>
+
+  <!-- content -->
+  <center>
+  <div class="content">
+  <p>Navigate to your preferred jobs/internships</p>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Location <i class="fa fa-angle-down"></i></button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="chennai.html">Chennai</a>
+      <a href="delhi.html">Delhi</a>
+      <a href="map.html">Bangalore</a>
+      <a href="bombay.html">Mumbai</a>
+    </div>
+  </div>
+  </div>
+</center>
+<!-- map -->
+<div class="container">
+<div class="left">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1ClX4krHxzXU3nyjZa4Yf--2gPJE3pAk&hl=en&ehbc=2E312F" width="640" height="480"></iframe> width="640" height="480"></iframe> 
+</div>
+<div class="right">
+  <center>
+    <pre>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    Mumbai City
+    City Radius :603km<sup>2</sup>
+    No. of companies in this area: 120+
+  
+    </pre>
+  </center>
+</div>
+</div>
+<!-- <script>
+  function getElementById("uname") {
+      var userName = document.getElementById("firstname")
+      document.write("Hello, " + userName);
+</script> -->
+  
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+</div>
+</body>
+</html>
